@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GaariHaat · Every car inspected before you pay</title>
+  <meta name="description" content="Reconditioned, used and brand new cars in Dhaka. Every car has its own inspection report. Hold yours with 5%, refundable for 7 days.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&text=%E0%A7%B3&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="preload" as="image" href="assets/hero/hero-mg-zs-gemini-light.jpg">
+</head>
+<body data-page="home">
+  <header class="site-header" id="site-header"></header>
+
+  <main>
+    <!-- hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-card">
+        <div class="hero-photo" role="img" aria-label="A black MG ZS SUV in a bright showroom">
+          <div class="hero-pins">
+            <div class="pin" style="left:68.3%;top:58.7%"><span class="pin-dot" data-icon="check"></span><span class="pin-label"><strong>Lights and electrics</strong><span>Checked</span></span></div>
+            <div class="pin" style="left:85.6%;top:53.6%"><span class="pin-dot" data-icon="check"></span><span class="pin-label"><strong>Paint depth, every panel</strong><span>Factory paint</span></span></div>
+            <div class="pin" style="left:75.1%;top:74.1%"><span class="pin-dot" data-icon="check"></span><span class="pin-label"><strong>Tyres and brakes</strong><span>Checked · test-driven</span></span></div>
+          </div>
+          <a class="hero-proof" href="car.html?id=mg-zs-2026">
+            <span class="hero-proof-icon" data-icon="shield-check"></span>
+            <span><strong>MG ZS 1.5 2026 · brand new · ৳26.5 lakh</strong><span>Papers, chassis and zero km checked 2 Oct 2026 by Nusrat Jahan</span></span>
+          </a>
+          <span class="badge badge-verified hero-eyebrow hero-mobile-only"><span data-icon="shield-check" data-size="14"></span>Every car inspected</span>
+          <a class="hero-chip hero-mobile-only" href="car.html?id=mg-zs-2026">
+            <b>6/6</b>
+            <span><strong>MG ZS 1.5 2026 · ৳26.5 lakh</strong><span>Checked 2 Oct by Nusrat Jahan</span></span>
+          </a>
+        </div>
+
+        <div class="hero-panel">
+          <span class="badge badge-verified hero-eyebrow"><span data-icon="shield-check" data-size="14"></span>Every car inspected · Tejgaon showroom</span>
+          <h1 class="hero-title" id="hero-title">See what's been checked before you pay.</h1>
+          <p class="hero-lead">Every car has its own inspection report. Hold yours with 5%, refundable for 7 days.</p>
+          <a class="btn-pill-outline" href="how-we-verify.html">See how we verify every car <span data-icon="arrow-right" data-size="24"></span></a>
+          <div class="hero-stats hero-desktop-stats">
+            <div><strong>6</strong><span>checks per car</span></div>
+            <div><strong>5%</strong><span>holds it 7 days</span></div>
+            <div><strong>3 days</strong><span>refund time</span></div>
+          </div>
+        </div>
+
+        <form class="hero-search" action="browse.html" method="get" aria-label="Find a car">
+          <div class="search-field">
+            <label for="f-body">Body type</label>
+            <select id="f-body" name="body">
+              <option value="">All body types</option>
+              <option value="Sedan">Sedan</option>
+              <option value="Hatchback">Hatchback</option>
+              <option value="SUV">SUV</option>
+              <option value="MPV">Microbus / MPV</option>
+            </select>
+            <span data-icon="chevron-down" data-size="24"></span>
+          </div>
+          <div class="search-field">
+            <label for="f-condition">Condition</label>
+            <select id="f-condition" name="condition">
+              <option value="">New, recon or used</option>
+              <option value="Brand new">Brand new</option>
+              <option value="Reconditioned">Reconditioned</option>
+              <option value="Used">Used</option>
+            </select>
+            <span data-icon="chevron-down" data-size="24"></span>
+          </div>
+          <div class="search-field">
+            <label for="f-budget">Budget</label>
+            <select id="f-budget" name="budget">
+              <option value="">৳12.9 to ৳47.9 lakh</option>
+              <option value="under-20">Under ৳20 lakh</option>
+              <option value="20-35">৳20 to 35 lakh</option>
+              <option value="over-35">Over ৳35 lakh</option>
+            </select>
+            <span data-icon="chevron-down" data-size="24"></span>
+          </div>
+          <button class="btn btn-primary" type="submit"><span id="search-count">Show 11 cars</span><span data-icon="search" data-size="22"></span></button>
+        </form>
+
+        <div class="hero-stats hero-mobile-stats">
+          <div><strong>6</strong><span>checks per car</span></div>
+          <div><strong>5%</strong><span>holds it 7 days</span></div>
+          <div><strong>3 days</strong><span>refund time</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- featured -->
+    <section class="section home-featured" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="h2" id="featured-title">Inspected and ready to see</h2>
+            <p class="section-sub">A few from this week. Reserved cars stay on the list so you can see when they free up.</p>
+          </div>
+          <a class="link-arrow hero-desktop-stats" href="browse.html">Browse all 11 cars <span data-icon="arrow-right" data-size="18"></span></a>
+        </div>
+        <div class="card-grid" id="featured"></div>
+        <a class="btn btn-secondary btn-l btn-block browse-all-mobile" href="browse.html">Browse all 11 cars <span data-icon="arrow-right" data-size="18"></span></a>
+      </div>
+    </section>
+
+    <!-- why: bento -->
+    <section class="section" style="padding-top:0" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="h2" id="why-title">Why buy from GaariHaat</h2>
+            <p class="section-sub">The things that make a reconditioned car a safe buy, all on one page.</p>
+          </div>
+        </div>
+        <div class="bento">
+          <article class="tile tile-checks">
+            <img src="assets/cars/05-honda-vezel.jpg" alt="Honda Vezel Hybrid Z, inspected 30 Sep 2026" loading="lazy">
+            <div class="tile-checks-body">
+              <div class="tile-checks-head">
+                <h3 class="h4">Six checks on every car</h3>
+                <a class="link-arrow" href="how-we-verify.html">How we verify <span data-icon="arrow-right" data-size="18"></span></a>
+              </div>
+              <ul class="check-list">
+                <li><span class="check-dot" data-icon="check" data-size="16"></span>Papers</li>
+                <li><span class="check-dot" data-icon="check" data-size="16"></span>Chassis and engine numbers</li>
+                <li><span class="check-dot" data-icon="check" data-size="16"></span>Auction sheet</li>
+                <li><span class="check-dot" data-icon="check" data-size="16"></span>Mileage</li>
+                <li><span class="check-dot" data-icon="check" data-size="16"></span>Engine, brakes, test drive</li>
+                <li><span class="check-dot" data-icon="check" data-size="16"></span>Parts changed, listed</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tile tile-ink">
+            <p class="big" aria-hidden="true">5%</p>
+            <h3 class="h4">holds the car for you for 7 days</h3>
+            <p>On a ৳24.85 lakh Axio that is ৳1,24,250. The rest you pay at the showroom, after you have seen the car.</p>
+          </article>
+
+          <article class="tile tile-refund">
+            <span class="tile-icon" data-icon="clock" data-size="28"></span>
+            <h3 class="h4">7-day refund</h3>
+            <p>Change your mind, for any reason. Money back to the same card or account in 3 days.</p>
+          </article>
+
+          <article class="tile tile-grade">
+            <p class="big">4 · B<small>auction grade</small></p>
+            <h3 class="h4">Auction sheet, checked</h3>
+            <p>Recon cars: grade and mileage from Japan matched to the auction house record.</p>
+          </article>
+
+          <article class="tile tile-subtle">
+            <div class="badge-row">
+              <span class="badge badge-reserved"><span data-icon="clock" data-size="14"></span>Reserved · 2 days left</span>
+              <span class="badge badge-verified"><span data-icon="shield-check" data-size="14"></span>Verified</span>
+              <span class="badge badge-sold">Sold</span>
+            </div>
+            <h3 class="h4">Nothing disappears quietly</h3>
+            <p>Reserved and sold cars stay on the list, with the days left, so you can see what is moving and when a car frees up.</p>
+          </article>
+
+          <article class="tile tile-wide">
+            <span class="tile-icon" data-icon="map-pin" data-size="28"></span>
+            <h3 class="h4">See it before you pay the rest</h3>
+            <p>Tejgaon showroom, open every day 11 am to 12 midnight. Match the chassis number on your slip to the car, then decide.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- how buying works -->
+    <section class="section section-white" aria-labelledby="how-title">
+      <div class="container">
+        <h2 class="h2" id="how-title" style="margin-bottom:var(--space-spacious)">How buying works</h2>
+        <ol class="steps">
+          <li><span class="step-no">1</span><h3 class="h3">Read the inspection report</h3><p>Who checked the car, when, and all six results. Changed or repaired parts are listed, not hidden.</p></li>
+          <li><span class="step-no">2</span><h3 class="h3">Reserve with 5%</h3><p>Pay 5% by card or bank transfer and the car is held for you. Change your mind within 7 days and get all of it back, to the same card or account, within 3 days.</p></li>
+          <li><span class="step-no">3</span><h3 class="h3">Visit and buy</h3><p>Pick a time at the Tejgaon showroom. Match the chassis number on your booking slip to the car, pay the rest, drive home.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- showroom -->
+    <section class="section" aria-labelledby="showroom-title">
+      <div class="container">
+        <div class="showroom">
+          <div>
+            <h2 class="h3" id="showroom-title">Visit the showroom</h2>
+            <ul>
+              <li><span data-icon="map-pin"></span>Tejgaon Industrial Area, Dhaka</li>
+              <li><span data-icon="clock"></span>Open every day, 11 am to 12 midnight</li>
+              <li><span data-icon="phone"></span>01700-000000 (demo number)</li>
+            </ul>
+          </div>
+          <div class="showroom-cta">
+            <p>Reserve first, then visit. A reserved car is held for you, so it will still be here when you arrive.</p>
+            <a class="btn btn-secondary btn-l" href="browse.html">Browse cars <span data-icon="arrow-right" data-size="18"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/home.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/motion.js"></script>
+</body>
+</html>

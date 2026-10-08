@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browse cars · GaariHaat</title>
+  <meta name="description" content="11 reconditioned, used and brand new cars in Dhaka, every one inspected by GaariHaat.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&text=%E0%A7%B3&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="browse">
+  <header class="site-header" id="site-header"></header>
+
+  <main class="container page-top">
+    <h1 class="h1 page-title" id="browse-title">11 cars, every one inspected</h1>
+    <p class="lead">Prices in lakh. The 5% advance is shown in full taka on every car.</p>
+
+    <form class="filters" id="filters" aria-label="Filter cars">
+      <fieldset class="chip-group">
+        <legend>Body type</legend>
+        <div class="chips" data-name="body"></div>
+      </fieldset>
+      <fieldset class="chip-group">
+        <legend>Condition</legend>
+        <div class="chips" data-name="condition"></div>
+      </fieldset>
+      <fieldset class="chip-group">
+        <legend>Budget</legend>
+        <div class="chips" data-name="budget"></div>
+      </fieldset>
+    </form>
+
+    <div class="results-bar">
+      <p id="results-count" aria-live="polite"></p>
+      <label class="sort">
+        <span class="sr-only">Sort cars</span>
+        <select id="sort">
+          <option value="new">Sort: Newest first</option>
+          <option value="low">Sort: Price, low to high</option>
+          <option value="high">Sort: Price, high to low</option>
+        </select>
+        <span data-icon="chevron-down" data-size="18"></span>
+      </label>
+    </div>
+
+    <div class="card-grid" id="results"></div>
+    <div class="empty" id="empty" hidden>
+      <h2 class="h3">No car matches all three</h2>
+      <p class="lead">Try a wider budget or a different body type. New cars are inspected and added each week.</p>
+      <button class="btn btn-secondary btn-l" type="button" id="clear">Clear all filters</button>
+    </div>
+    <p class="end-note" id="end-note">That is every car in stock. New cars are inspected and added each week.</p>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/browse.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/motion.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 .hero { padding: 24px 24px 0; }
 .hero-card {
   position: relative;
-  height: clamp(760px, 50vw, 960px);
+  height: 960px; /* Figma height; the panel at 80px type needs all of it (1680 overlapped at 880) */
   border-radius: 24px;
   overflow: hidden;
   container-type: size;
@@ -140,6 +140,11 @@
 
 /* ---------- responsive ---------- */
 @media (max-width: 1599px) {
+  /* the rightmost pin's label would run off the card; it sits above its dot, ending at the dot */
+  .pin-flip { flex-direction: column-reverse; align-items: flex-end; gap: 8px; transform: translate(calc(-100% + 16px), calc(-100% + 16px)); }
+  /* proof card never reaches into the glass panel */
+  .hero-proof { max-width: calc(50cqw - 100px); }
+  .hero-card { height: 880px; } /* smaller type below 1600; 760 hid the stats under the search bar at 1440x900 */
   .hero-title { font-size: 64px; }
   .hero-lead { font-size: 22px; }
   .hero-panel { padding: 40px; }
